@@ -5,18 +5,44 @@
             &#8220;Инвестиции в будушее - начинаются в настоящем&#8221;
         </h1>
         <ul class="title-ru-wrapper_points">
-            <li>Мы создали комфортную среду, способную раскрывать таланты.</li>
-            <li>Наши подходы иновационны и нацелены на формирование экспертов.</li>
-            <li>Самые сложные концепции, мы объясняем просто и понятно.</li>
-            <li>Больше никаких занудных туториалов, только реальные и наглядные примеры.</li>
+            <div class="lines">
+                <img id="first-icon" class="icons-line" src="../../assets/images/icons/icons-48.png" alt="">
+                <li  id="first-line"> Мы создали комфортную среду, способную раскрывать таланты.</li>
+            </div>
+            <div class="lines">
+                <img id="second-icon" class="icons-line" src="../../assets/images/icons/icons-48-blue.png" alt="">
+                <li id="second-line">Наши подходы иновационны и нацелены на формирование экспертов.</li>
+            </div>
+            <div class="lines">
+                <img id="third-icon" class="icons-line" src="../../assets/images/icons/icons-48-purple.png" alt="">
+                <li id="third-line">Самые сложные концепции, мы объясняем просто и понятно.</li>
+            </div>
+            <div class="lines">
+                <img id="four-icon" class="icons-line" src="../../assets/images/icons/icons-48-red.png" alt="">
+                <li id="four-line">Больше никаких занудных туториалов, только реальные и наглядные примеры.</li>
+            </div>
+
+
+
 
         </ul>
     </div>
 </template>
 
 <script>
+    import {gsap} from "gsap";
     export default {
-        name: "TitleRu"
+        name: "TitleRu",
+        mounted() {
+            gsap.from("#first-line", {x: 1920,  duration:.5});
+            gsap.from("#second-line", {x: 1920, delay:.5, duration:.5});
+            gsap.from("#third-line", {x: 1920, delay:1, duration:.5});
+            gsap.from("#four-line", {x: 1920, delay:2, duration:.5});
+            gsap.from("#first-icon", {opacity: 0, delay:3, duration:.5});
+            gsap.from("#second-icon", {opacity: 0, delay:3.5, duration:.5});
+            gsap.from("#third-icon", {opacity: 0, delay:4, duration:.5});
+            gsap.from("#four-icon", {opacity: 0, delay:4.5, duration:.5});
+        }
     }
 </script>
 
@@ -52,6 +78,16 @@
                 font-weight: bold;
                 text-transform: uppercase;
                 padding: 1rem;
+
+            }
+            .lines{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+            }
+            .icons-line{
+                width: 24px;
+                height: 24px;
             }
         }
     }

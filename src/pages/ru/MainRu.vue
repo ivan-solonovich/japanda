@@ -8,12 +8,14 @@
 <script>
     import PresentationAnimation from "@/components/PresentationAnimation";
     import TitleRu from "@/pages/ru/TitleRu";
+
     export default {
         name: "MainRu",
         components:{
             PresentationAnimation,
             TitleRu
         }
+
     }
 </script>
 

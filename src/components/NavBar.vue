@@ -12,16 +12,12 @@
 
 <script>
     import MenuRu from "@/components/nav/MenuRu";
-    import {gsap} from "gsap";
+
 
     export default {
         name: "NavBar",
         components:{
             MenuRu
-        },
-        mounted() {
-            gsap.from("#logo-main", {x: -1920, delay:1, duration:1});
-
         }
 
     }
