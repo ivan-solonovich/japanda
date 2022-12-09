@@ -11,7 +11,7 @@
             </div>
             <div class="lines">
                 <img id="second-icon" class="icons-line" src="../../assets/images/icons/icons-48-blue.png" alt="">
-                <li id="second-line">Наши подходы иновационны и нацелены на формирование экспертов.</li>
+                <li id="second-line">Наши подходы иновационны. Мы доказали, что путь в IT может быть компетентным</li>
             </div>
             <div class="lines">
                 <img id="third-icon" class="icons-line" src="../../assets/images/icons/icons-48-purple.png" alt="">

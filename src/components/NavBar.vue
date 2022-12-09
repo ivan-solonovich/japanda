@@ -1,9 +1,16 @@
 <template>
     <div class="n-container">
+        <router-link :to="{name:'homeRu'}">
         <div class="n-container_logo  pl-2">
+
             <img class="n-container_logo_images" width="64" height="auto"  src="../assets/images/japanda-logo.png" alt="">
-            <h1 id="logo-main" class="n-container_logo_title pl-2">JaP@nda</h1>
+
+            <h1 id="logo-main" class="n-container_logo_title pl-2">
+                JaP@nda
+            </h1>
+
         </div>
+        </router-link>
         <div class="menu">
             <MenuRu/>
         </div>

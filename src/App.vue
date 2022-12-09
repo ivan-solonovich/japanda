@@ -1,16 +1,17 @@
 <template>
-<NavBar/>
-    <MainRu/>
+
+   <MainWrapper/>
+
 </template>
 
 <script>
-import NavBar from "@/components/NavBar";
-import MainRu from "@/pages/ru/MainRu";
+
+import MainWrapper from "@/wrapper/MainWrapper";
 export default {
   name: 'App',
   components: {
-        NavBar,
-        MainRu
+        MainWrapper,
+
   }
 }
 </script>
