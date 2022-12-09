@@ -25,4 +25,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+@media screen and (max-width: 1058px) {
+    .m-r-container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
 </style>
