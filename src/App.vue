@@ -1,26 +1,25 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<NavBar/>
+    <MainRu/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import NavBar from "@/components/NavBar";
+import MainRu from "@/pages/ru/MainRu";
 export default {
   name: 'App',
   components: {
-    HelloWorld
+        NavBar,
+        MainRu
   }
 }
 </script>
 
-<style>
+<style lang="scss">
+    @import "./src/assets/styles/styles.scss";
+    @import "./src/assets/styles/variable.scss";
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+    font-family: 'Montserrat', sans-serif;
 }
 </style>
