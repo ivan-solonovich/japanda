@@ -7,6 +7,9 @@
         <div class="menu">
             <MenuRu/>
         </div>
+<!--        <div class="lang">-->
+<!--            -->
+<!--        </div>-->
     </div>
 </template>
 
