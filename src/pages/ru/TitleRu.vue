@@ -57,6 +57,7 @@
         justify-content: center;
         align-items: center;
         &_title{
+            text-align: center;
             width: 100%;
             color: crimson;
             font-size: 1.5rem;
