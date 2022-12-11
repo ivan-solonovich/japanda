@@ -59,6 +59,7 @@
         &_title{
             padding-left: 2rem;
             padding-right: 2rem;
+            padding-bottom: 1rem;
             width: 100%;
             color: crimson;
             font-size: 1.5rem;
