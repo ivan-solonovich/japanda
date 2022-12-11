@@ -1,6 +1,6 @@
 <template>
     <div class="title-ru-wrapper">
-
+            <h2 class="title-ru-wrapper_title" >Современный иновационный подход к IT образованию.</h2>
         <h1 class="title-ru-wrapper_slogan">
             &#8220;Инвестиции в будушее - начинаются в настоящем&#8221;
         </h1>
@@ -56,7 +56,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
+        &_title{
+            width: 100%;
+            color: crimson;
+            font-size: 1.5rem;
+        }
         &_slogan{
             width: 100%;
             font-size: 3rem;
