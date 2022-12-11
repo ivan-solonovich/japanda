@@ -24,10 +24,14 @@
         width: 580px;
         height: 560px;
 
-        .main-pic{
-            position: relative;
-        }
 
+
+    }
+}
+@media screen and (max-width: 1058px) {
+    .p-a-wrapper_animation_block{
+        width: calc(100vw - 20px);
+        padding-left: calc(100vw - 95vw);
     }
 }
 </style>

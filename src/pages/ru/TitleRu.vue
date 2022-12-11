@@ -22,17 +22,18 @@
                 <li id="four-line">Больше никаких занудных туториалов, только реальные и наглядные примеры.</li>
             </div>
 
-
-
-
         </ul>
     </div>
 </template>
 
 <script>
+
     import {gsap} from "gsap";
     export default {
         name: "TitleRu",
+        components:{
+
+        },
         mounted() {
             gsap.from("#first-line", {x: 1920,  duration:.5});
             gsap.from("#second-line", {x: 1920, delay:.5, duration:.5});
@@ -55,14 +56,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        &_quota{
-            padding-left: 2rem;
-            padding-right: 2rem;
-            color: #766e3f;
-            font-weight: bold;
-            font-size: 2rem;
-        }
+
         &_slogan{
+            width: 100%;
             font-size: 3rem;
             color: $primary-color;
             padding-left: 2rem;
@@ -90,5 +86,16 @@
                 height: 24px;
             }
         }
+    }
+    @media screen and (max-width: 1058px) {
+        .title-ru-wrapper{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
     }
 </style>

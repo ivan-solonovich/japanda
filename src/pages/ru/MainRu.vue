@@ -4,19 +4,23 @@
             <PresentationAnimation class="present"/>
             <TitleRu class="title"/>
         </div>
-
+        <BenefitsListRu/>
+        <CloudOfTechnology/>
     </div>
 </template>
 
 <script>
     import PresentationAnimation from "@/components/PresentationAnimation";
     import TitleRu from "@/pages/ru/TitleRu";
-
+    import BenefitsListRu from "@/pages/ru/BenefitsListRu/BenefitsListRu";
+    import CloudOfTechnology from "@/components/CloudOfTechnology";
     export default {
         name: "MainRu",
         components:{
             PresentationAnimation,
-            TitleRu
+            TitleRu,
+            BenefitsListRu,
+            CloudOfTechnology
         }
 
     }
@@ -44,7 +48,14 @@
         grid-template-areas:
                                 "title"
                                 "present";
+       grid-auto-flow: column;
 
+    }
+    .present{
+        width: 100%;
+    }
+    .title{
+        width: 100%;
     }
 }
 </style>

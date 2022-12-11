@@ -1,7 +1,7 @@
 import {createRouter, createWebHashHistory} from "vue-router";
 import MainRu from "@/pages/ru/MainRu";
-import CoursesRu from "@/pages/ru/courses/CoursesRu";
-import PricesRu from "@/pages/ru/prices/PricesRu";
+import CoursesRu from "@/pages/ru/coursesRu/CoursesRu";
+import PricesRu from "@/pages/ru/pricesRu/PricesRu";
 import AboutRu from "@/pages/ru/AboutRu/AboutRu";
 
 const routes =
