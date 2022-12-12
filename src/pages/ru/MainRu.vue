@@ -42,12 +42,16 @@
     }
 }
 @media screen and (max-width: 1058px) {
+    .wrapper{
+
+    }
     .m-r-container{
         width: 100%;
         display: grid;
+        grid-gap: 1rem;
         grid-template-areas:
-                                "title"
-                                "present";
+                "title"
+                "present";
        grid-auto-flow: column;
 
     }
@@ -57,5 +61,6 @@
     .title{
         width: 100%;
     }
+
 }
 </style>

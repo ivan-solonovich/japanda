@@ -29,9 +29,15 @@
     }
 }
 @media screen and (max-width: 1058px) {
-    .p-a-wrapper_animation_block{
-        width: calc(100vw - 20px);
-        padding-left: calc(100vw - 95vw);
+    .p-a-wrapper{
+        width: 100%;
+        height: auto;
+        &_animation_block{
+            width: calc(100vw - 20px);
+            padding-left: calc(100vw - 90vw);
+            height: auto;
+        }
     }
+
 }
 </style>

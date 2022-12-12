@@ -67,7 +67,7 @@
         }
         &_slogan{
             width: 100%;
-            font-size: 3rem;
+            font-size: 2.5rem;
             color: $primary-color;
             padding-left: 2rem;
             padding-right: 2rem;
@@ -97,12 +97,22 @@
     }
     @media screen and (max-width: 1058px) {
         .title-ru-wrapper{
-            width: 100%;
+            width: 667px;
+            height: auto;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-
+            padding-top: 1rem;
+            &_title{
+                font-size: 1.2rem;
+            }
+            &_slogan{
+                font-size: 1.5rem;
+            }
+            li{
+                padding: .5rem;
+            }
         }
 
     }

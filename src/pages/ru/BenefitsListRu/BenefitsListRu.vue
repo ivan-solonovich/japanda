@@ -109,6 +109,10 @@
 
 }
     @media screen and (max-width: 1258px) {
+        .benefit-list_title{
+            font-size: 1rem;
+            font-weight: bold;
+        }
         .benefits-list-ru-container {
             width: 100%;
             display: grid;

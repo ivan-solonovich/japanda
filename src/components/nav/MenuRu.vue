@@ -1,43 +1,51 @@
 <template>
-    <div class="menu-ru">
-        <router-link :to="{name:'homeRu'}">
-            <div class="menu-item">
-                Home
-            </div>
-        </router-link>
-        <router-link :to="{name:'coursesRu'}">
-            <div class="menu-item">
-                Курсы
-            </div>
-        </router-link>
-        <router-link :to="{name:'pricesRu'}">
-            <div class="menu-item">
-                Цены
-            </div>
-        </router-link>
-        <router-link :to="{name:'aboutRu'}">
-            <div class="menu-item">
-                О нас
-            </div>
-        </router-link>
+    <div class="menu-ru-container">
+        <component :is="instanceMenu"/>
     </div>
+
 </template>
 
 <script>
+    import MenuDecstopRu from "./MenuDecstopRu";
+    import MenuMobileRu from "./MenuMobileRu";
     export default {
-        name: "MenuRu"
+        name: "MenuRu",
+        components:{
+            MenuDecstopRu,
+            MenuMobileRu
+        },
+        computed:{
+            instanceMenu(){
+
+            const component = this.isMobile()
+                ?   'MenuMobileRu'
+                :   'MenuDecstopRu'
+                return `${component}`
+    }
+
+         },
+        methods:{
+            isMobile(){
+                if(screen.width <960){
+                    return true
+                }
+
+            },
+
+        },
+
+
+
+
     }
 </script>
 
 <style lang="scss" scoped>
-    .menu-ru{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        .menu-item{
-            padding-right: 2rem;
-        }
-    }
+.menu-ru-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 </style>

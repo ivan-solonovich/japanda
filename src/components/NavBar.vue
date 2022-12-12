@@ -40,7 +40,7 @@
         display: grid;
         grid-template-columns: 2fr 4fr;
         width: 100%;
-        min-height: 90px;
+        height: auto;
         background-color: $light-bgc;
         &_logo{
             display: flex;
@@ -54,6 +54,14 @@
         &_logo_images{
 
             border-radius: 50%;
+        }
+    }
+    @media screen and (max-width: 960px){
+        .n-container{
+            display: grid;
+            grid-template-columns: 4fr 2fr;
+            width: 100%;
+            height: auto;
         }
     }
 </style>

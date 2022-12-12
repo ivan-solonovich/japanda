@@ -36,7 +36,7 @@
 <style lang="scss" scoped>
 .cloud-of-technology-wrapper{
     max-width: 100%;
-    min-height: 40px;
+
     display: flex;
     justify-content: center;
     align-items: center;
