@@ -23,16 +23,17 @@
             </div>
 
         </ul>
+        <CloudOfTechnology/>
     </div>
 </template>
 
 <script>
-
+    import CloudOfTechnology from "@/components/CloudOfTechnology";
     import {gsap} from "gsap";
     export default {
         name: "TitleRu",
         components:{
-
+            CloudOfTechnology
         },
         mounted() {
             gsap.from("#first-line", {x: 1920,  duration:.5});

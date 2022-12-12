@@ -5,7 +5,7 @@
             <TitleRu class="title"/>
         </div>
         <BenefitsListRu/>
-        <CloudOfTechnology/>
+
     </div>
 </template>
 
@@ -13,14 +13,14 @@
     import PresentationAnimation from "@/components/PresentationAnimation";
     import TitleRu from "@/pages/ru/TitleRu";
     import BenefitsListRu from "@/pages/ru/BenefitsListRu/BenefitsListRu";
-    import CloudOfTechnology from "@/components/CloudOfTechnology";
+
     export default {
         name: "MainRu",
         components:{
             PresentationAnimation,
             TitleRu,
             BenefitsListRu,
-            CloudOfTechnology
+
         }
 
     }
