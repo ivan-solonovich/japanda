@@ -5,7 +5,7 @@
             <TitleRu class="title"/>
         </div>
         <BenefitsListRu/>
-
+        <PracticalListRu/>
     </div>
 </template>
 
@@ -13,6 +13,7 @@
     import PresentationAnimation from "@/components/PresentationAnimation";
     import TitleRu from "@/pages/ru/TitleRu";
     import BenefitsListRu from "@/pages/ru/BenefitsListRu/BenefitsListRu";
+    import PracticalListRu from "@/pages/ru/practicalListRu/PracticalListRu";
 
     export default {
         name: "MainRu",
@@ -20,7 +21,7 @@
             PresentationAnimation,
             TitleRu,
             BenefitsListRu,
-
+            PracticalListRu
         }
 
     }

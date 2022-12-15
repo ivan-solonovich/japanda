@@ -1,14 +1,14 @@
 <template>
     <div class="menu-ru-container">
         <div>
-            <OpenMobileMenuRU v-show="menuIsOpen"/>
+
         </div>
        <div >
            <MenuDecstopRu v-show="theDesktop() === true"/>
        </div>
         <div >
-            <MenuMobileRu @click="openMenu"  v-show="theDesktop() === false"/>
-            <OpenMobileMenuRU v-show="menuIsOpen" @click="closeMenu"></OpenMobileMenuRU>
+            <MenuMobileRu id="open-mobile-menu"  @click="openMenu"  v-show="theDesktop() === false"/>
+            <OpenMobileMenuRU id="open-mobile-menu-ru"  v-show="menuIsOpen" @click="closeMenu"></OpenMobileMenuRU>
         </div>
 
     </div>
@@ -19,7 +19,7 @@
     import MenuDecstopRu from "./MenuDecstopRu";
     import MenuMobileRu from "./MenuMobileRu";
     import OpenMobileMenuRU from "@/components/nav/OpenMobileMenuRU";
-
+    import {gsap} from "gsap";
     export default {
         name: "MenuRu",
         components: {
@@ -36,6 +36,8 @@
             menuIsOpen: false
         }),
         mounted() {
+            gsap.from("#open-mobile-menu", {y:-1000, opacity: 1, duration: 1.5})
+
 
         },
         computed: {
@@ -54,6 +56,7 @@
             openMenu(){
                 this.menuIsOpen = true;
                 this.desktop = false;
+
             },
             closeMenu() {
                 this.menuIsOpen = false;
