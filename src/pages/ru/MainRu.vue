@@ -41,9 +41,9 @@
         grid-area: title;
     }
 }
-@media screen and (max-width: 1058px) {
+@media screen and (max-width: 960px) {
     .wrapper{
-
+        max-height: 80vh;
     }
     .m-r-container{
         width: 100%;

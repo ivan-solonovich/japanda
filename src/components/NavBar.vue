@@ -52,7 +52,6 @@
             color: $primary-color;
         }
         &_logo_images{
-
             border-radius: 50%;
         }
     }

@@ -4,7 +4,7 @@
             <img id="icon-1" src="../assets/images/programing-languages/icons8-html-5-48.png" alt="html" class="cloud-of-technology-wrapper_icons-container_img">
             <img id="icon-2" src="../assets/images/programing-languages/icons8-css3-100.png" alt="html" class="cloud-of-technology-wrapper_icons-container_img">
             <img id="icon-3" src="../assets/images/programing-languages/icons8-nodejs-48.png" alt="html" class="cloud-of-technology-wrapper_icons-container_img">
-            <img id="icon-4" src="../assets/images/programing-languages/icons8-javascript.gif" alt="html" class="cloud-of-technology-wrapper_icons-container_img">
+            <img id="icon-4" src="../assets/images/programing-languages/icons8-javascript-48.png" alt="html" class="cloud-of-technology-wrapper_icons-container_img">
             <img id="icon-5" src="../assets/images/programing-languages/icons8-nuxt-js-a-free-and-open-source-web-application-framework-36.png" alt="html" class="cloud-of-technology-wrapper_icons-container_img">
             <img id="icon-6" src="../assets/images/programing-languages/icons8-react-native-64.png" alt="html" class="cloud-of-technology-wrapper_icons-container_img">
             <img id="icon-7" src="../assets/images/programing-languages/icons8-vue-js-48.png" alt="html" class="cloud-of-technology-wrapper_icons-container_img">
@@ -44,7 +44,7 @@
     &_icons-container{
         width: 100%;
         display: flex;
-
+        justify-content: center;
         align-items: center;
         flex-wrap: wrap;
         &_img{

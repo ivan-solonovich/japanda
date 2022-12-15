@@ -1,6 +1,16 @@
 <template>
     <div class="menu-ru-container">
-        <component :is="instanceMenu"/>
+        <div>
+            <OpenMobileMenuRU v-show="menuIsOpen"/>
+        </div>
+       <div >
+           <MenuDecstopRu v-show="theDesktop() === true"/>
+       </div>
+        <div >
+            <MenuMobileRu @click="openMenu"  v-show="theDesktop() === false"/>
+            <OpenMobileMenuRU v-show="menuIsOpen" @click="closeMenu"></OpenMobileMenuRU>
+        </div>
+
     </div>
 
 </template>
@@ -8,35 +18,49 @@
 <script>
     import MenuDecstopRu from "./MenuDecstopRu";
     import MenuMobileRu from "./MenuMobileRu";
+    import OpenMobileMenuRU from "@/components/nav/OpenMobileMenuRU";
+
     export default {
         name: "MenuRu",
-        components:{
+        components: {
             MenuDecstopRu,
-            MenuMobileRu
+            MenuMobileRu,
+            OpenMobileMenuRU
         },
-        computed:{
-            instanceMenu(){
+        props:{
 
-            const component = this.isMobile()
-                ?   'MenuMobileRu'
-                :   'MenuDecstopRu'
-                return `${component}`
-    }
+        },
+        data: () => ({
+            desktop: true,
+            mobile: false,
+            menuIsOpen: false
+        }),
+        mounted() {
 
-         },
-        methods:{
-            isMobile(){
-                if(screen.width <960){
-                    return true
+        },
+        computed: {
+
+        },
+        methods: {
+            theDesktop(){
+
+                if(window.innerWidth < 960){
+                   return this.desktop = false;
+                }else {
+                    return this.desktop = true;
                 }
 
             },
+            openMenu(){
+                this.menuIsOpen = true;
+                this.desktop = false;
+            },
+            closeMenu() {
+                this.menuIsOpen = false;
+                this.desktop = false;
+            }
 
-        },
-
-
-
-
+        }
     }
 </script>
 

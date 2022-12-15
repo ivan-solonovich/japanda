@@ -1,12 +1,13 @@
 <template>
     <div class="menu-mobile">
-        <img src="../../assets/images/icons/icons8-меню-в-квадрате-50.png" alt="">
+        <img @click="$emit('click')" src="../../assets/images/icons/icons8-меню-в-квадрате-50.png" alt="">
     </div>
 </template>
 
 <script>
     export default {
-        name: "MenuMobileRu"
+        name: "MenuMobileRu",
+
     }
 </script>
 
