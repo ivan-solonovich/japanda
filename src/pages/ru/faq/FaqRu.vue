@@ -1,22 +1,32 @@
 <template>
    <div class="faq-wrapper">
         <div class="faq-wrapper_container">
-            <div class="faq-wrapper_container_faq-block">
-                <div class="faq-wrapper_container_faq-block_title">
-                    <h2>Формат занятий - менторство.</h2>
+                <div class="faq-wrapper_container_faq-block">
+                    <div class="faq-wrapper_container_faq-block_title">
+                        <h2>Формат занятий - менторство.</h2>
+                    </div>
+                    <div class="faq-wrapper_container_faq-block_explanation">
+                            <p>Академический подход лекция-практика, может и неплох - для лектора, чья цель изложить
+                            материал и раздать домашние задания. Знакомая ситуация?  У нас другая история,
+                            вы взаимодействуете не с преподавателем, а скорее с более опытным коллегой. И все происходит как
+                            в жизни - компания, заказ, дедлайн ...
+                        </p>
+                    </div>
                 </div>
-                <div class="faq-wrapper_container_faq-block_explanation">
-                        <p>Академический подход лекция-практика, может и неплох - для лектора, чья цель изложить
-                        материал и раздать домашние задания. Знакомая ситуация?  У нас другая история,
-                        вы взаимодействуете не с преподавателем, а скорее с более опытным коллегой. И все происходит как
-                        в жизни - компания, заказ, дедлайн ...
-                    </p>
+                <div class="faq-wrapper_container_faq-block">
+                        <div class="faq-wrapper_container_faq-block_title">
+                            <h2>Только практически применимые примеры и задания</h2>
+                        </div>
+                        <div class="faq-wrapper_container_faq-block_explanation">
+                            <p>Заканчивает человек униварситет, приходит на работу и ... - начинает учится работать!
+                                Наш подход несколько иной - вы сразу столкнетесь с задачами применимыми в жизни и
+                                разберетесь как их решить. Финал любого курса - это собственный сервис.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="faq-wrapper_container_faq-block">
 
-            </div>
-        </div>
+
    </div>
 </template>
 
