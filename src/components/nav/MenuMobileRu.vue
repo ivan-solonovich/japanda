@@ -18,5 +18,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url('../../assets/images/bgi/Btn04-for-desktop-menu.png');
+    background-size: cover;
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-right: 2rem;
 }
 </style>

@@ -1,8 +1,8 @@
 <template>
     <div class="title-ru-wrapper">
-            <h2 class="title-ru-wrapper_title" >Современный иновационный подход к IT образованию.</h2>
-        <h1 class="title-ru-wrapper_slogan">
-            &#8220;Инвестиции в будушее - начинаются в настоящем&#8221;
+
+        <h1 class="title-ru-wrapper_slogan font-semibold">
+            Современный иновационный подход к IT образованию.
         </h1>
         <ul class="title-ru-wrapper_points">
             <div class="lines">
@@ -56,6 +56,7 @@
 
 <style lang="scss" scoped>
     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@700&display=swap');
     @import "./src/assets/styles/styles.scss";
     .title-ru-wrapper{
         width: 100%;
@@ -77,9 +78,10 @@
         &_slogan{
             width: 100%;
             font-size: 2rem;
-            color: $primary-color;
+            color: #515a6b;
             padding-left: 2rem;
             padding-right: 2rem;
+
 
         }
         &_points{

@@ -8,7 +8,7 @@
 
             </router-link>
 
-            называются - практика создания интернет-магазина,
+            это - практика создания интернет-магазина,
             даже для абсолютных новичков. </h1>
         <div class="practical-list-ru-wrapper">
             <div class="practical-list-ru-wrapper_subcontainer">
@@ -58,7 +58,7 @@
             </div>
             <div class="practical-list-ru-wrapper_subcontainer">
                 <div class="practical-list-ru-wrapper_subcontainer_left">
-                    <h3 class="practical-list-ru-wrapper_subcontainer_left_title">Читаете требования к знания React,
+                    <h3 class="practical-list-ru-wrapper_subcontainer_left_title">Читаете требования к знаниям React,
                         Vue, TypeScript, Express?</h3>
                     <p>Библиотеки, фреймворки, обертки ставшие отдельными экосистемами и изменившие подход к разработке.
                         Все они приобрели миллионы поклонников и зачастую стали основным инструментом разработки для
@@ -139,7 +139,7 @@
                 display: flex;
                 flex-direction: column;
 
-                background-image: url("../../../assets/images/bgi/banner-bg1.jpg");
+                background-image: url("../../../assets/images/bgi/banner-bg2.jpg");
                 &_subcontainer{
                     max-width: 100%;
                     height: auto;

@@ -6,6 +6,8 @@
         </div>
         <BenefitsListRu/>
         <PracticalListRu/>
+
+        <FaqRu/>
     </div>
 </template>
 
@@ -15,13 +17,15 @@
     import BenefitsListRu from "@/pages/ru/BenefitsListRu/BenefitsListRu";
     import PracticalListRu from "@/pages/ru/practicalListRu/PracticalListRu";
 
+    import FaqRu from "@/pages/ru/faq/FaqRu";
     export default {
         name: "MainRu",
         components:{
             PresentationAnimation,
             TitleRu,
             BenefitsListRu,
-            PracticalListRu
+            PracticalListRu,
+            FaqRu
         }
 
     }
@@ -62,6 +66,5 @@
     .title{
         width: 100%;
     }
-
 }
 </style>

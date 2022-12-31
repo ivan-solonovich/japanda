@@ -6,8 +6,8 @@
        <div >
            <MenuDecstopRu v-show="theDesktop() === true"/>
        </div>
-        <div >
-            <MenuMobileRu id="open-mobile-menu"  @click="openMenu"  v-show="theDesktop() === false"/>
+        <div>
+            <MenuMobileRu id="open-mobile-menu" class="mobile-menu"  @click="openMenu"  v-show="theDesktop() === false"/>
             <OpenMobileMenuRU id="open-mobile-menu-ru"  v-show="menuIsOpen" @click="closeMenu"></OpenMobileMenuRU>
         </div>
 
@@ -75,4 +75,9 @@
     justify-content: center;
     align-items: center;
 }
+    .mobile-menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 </style>
