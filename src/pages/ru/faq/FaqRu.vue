@@ -24,6 +24,27 @@
                             </p>
                         </div>
                     </div>
+            <div class="faq-wrapper_container_faq-block">
+                <div class="faq-wrapper_container_faq-block_title">
+                    <h2>Самый популярный стек за последнее десятилетие</h2>
+                </div>
+                <div class="faq-wrapper_container_faq-block_explanation">
+                    <p>JavaScript - живет на всех устройствах. Легкий, гибкий, быстрый мультипарадигменный.
+                        Гарантированно востребованный. По версии GitHub - самый популярный, многие годы.
+                    </p>
+
+                </div>
+                <div class="faq-wrapper_container_faq-block_image-container">
+                    <img src="../../../assets/images/pic-for-faq/github-note.png" alt="">
+                    <img src="../../../assets/images/pic-for-faq/google-note.png" alt="">
+                </div>
+                <div class="faq-wrapper_container_faq-block_explanation">
+                    <p>Как гиганты вроде Google, Amazon, Facebook, так и небольшие компании используют JS.
+                        Это признание, и главное - спрос на JS-разработчиков.
+                    </p>
+
+                </div>
+            </div>
                 </div>
 
 
@@ -61,6 +82,7 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                flex-direction: column;
                 border: $light-bgc solid 2px;
                 border-block-end-width: 3px;
                 border-block-end-width: 4px;
@@ -81,6 +103,15 @@
                     align-items: center;
                     margin: 1rem;
                     padding: 1rem;
+                }
+                &_image-container{
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 1rem;
+                    margin: 1rem;
                 }
             }
         }
