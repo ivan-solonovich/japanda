@@ -4,10 +4,10 @@
             когда вы дочитали книгу или решили задачу. А когда вы поняли, как он устроен. Когда-то, мы этот мир для себя
             открыли. Это незабываемый момент и эмоционально и физически. Путь был не легким,
             но мы уже знаем как по нему идти.  И мы знаем, где находится та самая дверь, открывающая мир возможностей. </h2>
-        <div class="benefits-list-ru-container">
-            <div class="benefits-list-ru-container_subcontainer">
+        <div class="benefits-list-ru-container ">
+            <div class="benefits-list-ru-container_subcontainer anim-one">
                 <div class="benefits-list-ru-container_subcontainer_left">
-                    <img class="benefit-list_image" src="../../../assets/images/pic-for-benefit-lists/photo-1541462608143-67571c6738dd.avif" alt="">
+                    <img class="benefit-list_image " src="../../../assets/images/pic-for-benefit-lists/photo-1541462608143-67571c6738dd.avif" alt="">
                 </div>
                 <div class="benefits-list-ru-container_subcontainer_right">
                     <p>Все сегодня можно найти в сети? - это верно.  Однако, поиск может занять слишком много времени
@@ -16,7 +16,7 @@
                     а чаще всего, просто, уже знает ответ на большинство вопросов. </p>
                 </div>
             </div>
-            <div class="benefits-list-ru-container_subcontainer">
+            <div class="benefits-list-ru-container_subcontainer anim-two">
                 <div class="benefits-list-ru-container_subcontainer_left">
                     <img class="benefit-list_image" src="../../../assets/images/pic-for-benefit-lists/photo-1620403661092-1750c6d4148a.avif" alt="">
                 </div>
@@ -27,7 +27,7 @@
                         высокоуровневого языка по болтикам.</p>
                 </div>
             </div>
-            <div class="benefits-list-ru-container_subcontainer">
+            <div class="benefits-list-ru-container_subcontainer anim-three">
                 <div class="benefits-list-ru-container_subcontainer_left">
                     <img class="benefit-list_image" src="../../../assets/images/pic-for-benefit-lists/photo-1568219557405-376e23e4f7cf.avif" alt="">
                 </div>
@@ -38,7 +38,7 @@
                         практическое применение. </p>
                 </div>
             </div>
-            <div class="benefits-list-ru-container_subcontainer">
+            <div class="benefits-list-ru-container_subcontainer anim-four">
                 <div class="benefits-list-ru-container_subcontainer_left">
                     <img class="benefit-list_image" src="../../../assets/images/pic-for-benefit-lists/photo-1522542550221-31fd19575a2d.avif" alt="">
                 </div>
@@ -53,8 +53,61 @@
 </template>
 
 <script>
+    import gsap from 'gsap'
+    import { ScrollTrigger } from "gsap/ScrollTrigger";
+    import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+    gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
     export default {
-        name: "BenefitsListRu"
+        name: "BenefitsListRu",
+        mounted() {
+            gsap.from(".anim-one",{
+
+                scrollTrigger:  {
+                    trigger: ".anim-one",
+
+                    start: "top top",
+                    toggleActions: "restart none none none"
+                },
+                    x: -1800,
+                    y: -800,
+                    duration: 1.5,
+
+            }
+
+            )
+            gsap.from(".anim-two",{
+
+                scrollTrigger:  {
+                    trigger: ".anim-two",
+
+                    toggleActions: "restart none none none"
+                },
+                x: 1800,
+
+                duration: 1.5,
+            })
+
+            gsap.from(".anim-three",{
+                scrollTrigger:  {
+                    trigger: ".anim-three",
+                    toggleActions: "restart none restart none"
+                },
+                x: -1800,
+
+
+                duration: 1.5,
+            })
+            gsap.from(".anim-four",{
+                scrollTrigger:  {
+                    trigger: ".anim-four",
+                    toggleActions: "restart none restart none"
+                },
+                x: 1800,
+
+                duration: 1.5,
+            })
+        }
     }
 </script>
 
