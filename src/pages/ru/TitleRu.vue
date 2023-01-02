@@ -7,7 +7,7 @@
         <ul class="title-ru-wrapper_points">
             <div class="lines">
                 <img id="first-icon" class="icons-line" src="../../assets/images/icons/marker-64-blue.png" alt="">
-                <li  id="first-line"> Для вас разработана комфортная среда, способную раскрывать таланты.</li>
+                <li  id="first-line"> Для вас разработана комфортная среда, способная раскрывать таланты.</li>
             </div>
             <div class="lines">
                 <img id="second-icon" class="icons-line" src="../../assets/images/icons/marker-64-red.png" alt="">
