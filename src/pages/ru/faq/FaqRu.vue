@@ -12,6 +12,10 @@
                             в жизни - компания, заказ, дедлайн ...
                         </p>
                     </div>
+                    <div class="faq-wrapper_container_faq-block_image-container">
+                        <img class="faq-wrapper_container_faq-block_image-container_image" src="../../../assets/images/pic-for-faq/mentoring-concept.jpg" alt="">
+
+                    </div>
                 </div>
                 <div class="faq-wrapper_container_faq-block">
                         <div class="faq-wrapper_container_faq-block_title">
@@ -23,6 +27,10 @@
                                 разберетесь как их решить. Финал любого курса - это собственный сервис.
                             </p>
                         </div>
+                    <div class="faq-wrapper_container_faq-block_image-container">
+                        <img class="faq-wrapper_container_faq-block_image-container_image" src="../../../assets/images/pic-for-faq/creative-agency-concept-in-flat-design-vector.jpg" alt="">
+
+                    </div>
                     </div>
             <div class="faq-wrapper_container_faq-block">
                 <div class="faq-wrapper_container_faq-block_title">
@@ -45,6 +53,23 @@
 
                 </div>
             </div>
+            <div class="faq-wrapper_container_faq-block">
+                <div class="faq-wrapper_container_faq-block_title">
+                    <h2>Джунов не делаем!</h2>
+                </div>
+                <div class="faq-wrapper_container_faq-block_explanation">
+                    <p>Человека способного написать с ноля интернет-маркет, и даже фреймворк - джуном не назовешь!
+                       Такие вещи в портфолио - это не TODO-лист! Это полноценный сервис.
+                        Да, будет трудно, но дойдя до финала, вы будуте специалистами за которыми охотятся компании.
+                    </p>
+
+                </div>
+                <div class="faq-wrapper_container_faq-block_image-container">
+                    <img class="faq-wrapper_container_faq-block_image-container_image" src="../../../assets/images/pic-for-faq/Social_Monitoring_11_generated.jpg" alt="">
+
+                </div>
+
+            </div>
                 </div>
 
 
@@ -60,20 +85,22 @@
 <style lang="scss" scoped>
     @import "./src/assets/styles/styles.scss";
     .faq-wrapper{
-        width: 100%;
+        max-width: 1480px;
         height: auto;
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
         padding-bottom: 1rem;
+        padding-right: 2rem;
         &_container{
-            max-width: 1480px;
+            max-width: 100%;
             background-image: url("../../../assets/images/pic-for-faq/bg.png");
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            flex-wrap: wrap;
             padding: 1rem;
             &_faq-block{
                 width: 100%;
@@ -108,10 +135,16 @@
                     width: 100%;
                     display: flex;
                     flex-wrap: wrap;
-                    justify-content: center;
+                    justify-content: space-around;
                     align-items: center;
                     padding: 1rem;
                     margin: 1rem;
+                    &_image{
+                        max-width: 100%;
+                        height: auto;
+                        border-radius: 20%;
+                        opacity: .5;
+                    }
                 }
             }
         }
