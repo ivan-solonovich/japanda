@@ -65,8 +65,7 @@
 
                 scrollTrigger:  {
                     trigger: ".anim-one",
-
-                    start: "top top",
+                    start: "20px 10%",
                     toggleActions: "restart none none none"
                 },
                     x: -1800,
@@ -80,7 +79,7 @@
 
                 scrollTrigger:  {
                     trigger: ".anim-two",
-
+                    start: "20px 80%",
                     toggleActions: "restart none none none"
                 },
                 x: 1800,
@@ -91,7 +90,10 @@
             gsap.from(".anim-three",{
                 scrollTrigger:  {
                     trigger: ".anim-three",
-                    toggleActions: "restart none restart none"
+                    start: "20px 80%",
+                    toggleActions: "restart none none none"
+
+
                 },
                 x: -1800,
 
@@ -101,7 +103,8 @@
             gsap.from(".anim-four",{
                 scrollTrigger:  {
                     trigger: ".anim-four",
-                    toggleActions: "restart none restart none"
+                    start: "20px 80%",
+                    toggleActions: "restart none none none"
                 },
                 x: 1800,
 
