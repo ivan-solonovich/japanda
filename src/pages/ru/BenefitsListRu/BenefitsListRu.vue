@@ -40,7 +40,7 @@
             </div>
             <div class="benefits-list-ru-container_subcontainer anim-four">
                 <div class="benefits-list-ru-container_subcontainer_left">
-                    <img class="benefit-list_image" src="../../../assets/images/pic-for-benefit-lists/Screenshot.png" alt="">
+                    <img class="benefit-list_image" src="../../../assets/images/pic-for-benefit-lists/modern-diagrams-infographics.jpg" alt="">
                 </div>
                 <div class="benefits-list-ru-container_subcontainer_right">
                     <p>На любом уровне, и в каждом курсе, мы будем создавать, что-то практическое, настоящее.
