@@ -1,6 +1,6 @@
 <template>
     <div class="benefit-list">
-        <h2 class="benefit-list_title"> Мир возможностей открывается, не в тот момент,
+        <h2 class="benefit-list_title start-anim"> Мир возможностей открывается, не в тот момент,
             когда вы дочитали книгу или решили задачу. А когда вы поняли, как он устроен. Когда-то, мы этот мир для себя
             открыли. Это незабываемый момент и эмоционально и физически. Путь был не легким,
             но мы уже знаем как по нему идти.  И мы знаем, где находится та самая дверь, открывающая мир возможностей. </h2>
@@ -61,55 +61,118 @@
     export default {
         name: "BenefitsListRu",
         mounted() {
-            gsap.from(".anim-one",{
+            if(innerWidth > 1258){
+                gsap.from(".anim-one",{
 
-                scrollTrigger:  {
-                    trigger: ".anim-one",
-                    start: "20px 10%",
-                    toggleActions: "restart none none none"
-                },
+                        scrollTrigger:  {
+                            trigger: ".start-anim",
+                            start: "top bottom",
+                            end: "bottom",
+                            toggleActions: "restart none none none",
+                            scrub: true,
+
+                        },
+                        x: -600,
+                        y: 300,
+                        duration: 1.5,
+
+                    })
+                gsap.from(".anim-two",{
+                    scrollTrigger:  {
+                        trigger: ".start-anim",
+                        start: "bottom bottom",
+                        end: "bottom",
+                        toggleActions: "restart none none none",
+                        scrub: true,
+                    },
+                    x: 1800,
+
+                    duration: 1.5,
+                })
+
+                gsap.from(".anim-three",{
+                    scrollTrigger:  {
+                        trigger: ".start-anim",
+                        start: "top bottom",
+                        end: "bottom",
+                        toggleActions: "restart none none none",
+                        scrub: true,
+
+                    },
                     x: -1800,
-                    y: -800,
+
+
+                    duration: 1.5,
+                })
+                gsap.from(".anim-four",{
+                    scrollTrigger:  {
+                        trigger: ".start-anim",
+                        start: "top bottom",
+                        end: "bottom",
+                        toggleActions: "restart none none none",
+                        scrub: true,
+                    },
+                    x: 1800,
+
+                    duration: 1.5,
+                })
+            }else {
+                gsap.from(".anim-one",{
+
+                    scrollTrigger:  {
+                        trigger: ".start-anim",
+                        // start: "top bottom",
+                        // end: "bottom",
+                        toggleActions: "restart none none none",
+                        scrub: true,
+
+                    },
+                    x: -600,
+                    y: 300,
                     duration: 1.5,
 
+                })
+                gsap.from(".anim-two",{
+                    scrollTrigger:  {
+                        trigger: ".start-anim",
+                        start: "bottom bottom",
+                        end: "bottom",
+                        toggleActions: "restart none none none",
+                        scrub: true,
+                    },
+                    x: 1800,
+
+                    duration: 1.5,
+                })
+
+                gsap.from(".anim-three",{
+                    scrollTrigger:  {
+                        trigger: ".anim-two",
+                        start: "top bottom",
+                        end: "bottom",
+                        toggleActions: "restart none none none",
+                        scrub: true,
+
+                    },
+                    x: -1800,
+
+
+                    duration: 1.5,
+                })
+                gsap.from(".anim-four",{
+                    scrollTrigger:  {
+                        trigger: ".anim-three",
+                        start: "top bottom",
+                        end: "bottom",
+                        toggleActions: "restart none none none",
+                        scrub: true,
+                    },
+                    x: 1800,
+
+                    duration: 1.5,
+                })
             }
 
-            )
-            gsap.from(".anim-two",{
-
-                scrollTrigger:  {
-                    trigger: ".anim-two",
-                    start: "20px 80%",
-                    toggleActions: "restart none none none"
-                },
-                x: 1800,
-
-                duration: 1.5,
-            })
-
-            gsap.from(".anim-three",{
-                scrollTrigger:  {
-                    trigger: ".anim-three",
-                    start: "20px 80%",
-                    toggleActions: "restart none none none"
-
-
-                },
-                x: -1800,
-
-
-                duration: 1.5,
-            })
-            gsap.from(".anim-four",{
-                scrollTrigger:  {
-                    trigger: ".anim-four",
-                    start: "20px 80%",
-                    toggleActions: "restart none none none"
-                },
-                x: 1800,
-
-                duration: 1.5,
-            })
         }
     }
 </script>
