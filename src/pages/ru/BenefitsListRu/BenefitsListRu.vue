@@ -269,6 +269,7 @@
 
     }
     .benefit-list_image{
+        max-width: 500px;
         max-height: 200px;
     }
 </style>

@@ -166,7 +166,7 @@
                         toggleActions: "restart none none none",
                         scrub: true,
                     },
-                    x: -1800,
+                    x: 1800,
                     y: -800,
                     duration: 1,
                 })
