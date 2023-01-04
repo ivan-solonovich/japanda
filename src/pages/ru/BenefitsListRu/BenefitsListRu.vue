@@ -7,7 +7,7 @@
         <div class="benefits-list-ru-container ">
             <div class="benefits-list-ru-container_subcontainer anim-one">
                 <div class="benefits-list-ru-container_subcontainer_left">
-                    <img class="benefit-list_image " src="../../../assets/images/pic-for-benefit-lists/photo-1541462608143-67571c6738dd.png" alt="">
+                    <img class="benefit-list_image " src="../../../assets/images/pic-for-benefit-lists/abstract-composition-with-connecting-dots-and-lines-on-the-white-backround-futuristic.jpg" alt="">
                 </div>
                 <div class="benefits-list-ru-container_subcontainer_right">
                     <p>Все сегодня можно найти в сети? - это верно.  Однако, поиск может занять слишком много времени
@@ -18,7 +18,7 @@
             </div>
             <div class="benefits-list-ru-container_subcontainer anim-two">
                 <div class="benefits-list-ru-container_subcontainer_left">
-                    <img class="benefit-list_image" src="../../../assets/images/pic-for-benefit-lists/photo-1620403661092-1750c6d4148a.png" alt="">
+                    <img class="benefit-list_image" src="../../../assets/images/pic-for-benefit-lists/grey-white-abstract-technology-background-with-various-technology-elements-hi-tech.jpg" alt="">
                 </div>
                 <div class="benefits-list-ru-container_subcontainer_right">
                     <p>Можно всю жизнь проездить на машине и не знать, как она устроена. Но, если вы решили поучавствовать
@@ -29,7 +29,7 @@
             </div>
             <div class="benefits-list-ru-container_subcontainer anim-three">
                 <div class="benefits-list-ru-container_subcontainer_left">
-                    <img class="benefit-list_image" src="../../../assets/images/pic-for-benefit-lists/photo-1568219557405-376e23e4f7cf.png" alt="">
+                    <img class="benefit-list_image" src="../../../assets/images/pic-for-benefit-lists/vecteezy_two-men-doing-online-digital-marketing-sales-analysis_8258415.jpg" alt="">
                 </div>
                 <div class="benefits-list-ru-container_subcontainer_right">
                     <p>Действия должны быть осмысленными, - ничего так не убивает мотивацию,
@@ -40,7 +40,7 @@
             </div>
             <div class="benefits-list-ru-container_subcontainer anim-four">
                 <div class="benefits-list-ru-container_subcontainer_left">
-                    <img class="benefit-list_image" src="../../../assets/images/pic-for-benefit-lists/photo-1522542550221-31fd19575a2d.png" alt="">
+                    <img class="benefit-list_image" src="../../../assets/images/pic-for-benefit-lists/photo3.png" alt="">
                 </div>
                 <div class="benefits-list-ru-container_subcontainer_right">
                     <p>На любом уровне, и в каждом курсе, мы будем создавать, что-то практическое, настоящее.
