@@ -21,6 +21,7 @@ export default {
     @import "./src/assets/styles/variable.scss";
     @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 #app {
-    font-family: 'Montserrat', sans-serif;
+      font-family: 'Montserrat', sans-serif;
+
 }
 </style>

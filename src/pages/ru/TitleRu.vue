@@ -1,7 +1,7 @@
 <template>
     <div class="title-ru-wrapper">
 
-        <h1 class="title-ru-wrapper_slogan font-semibold">
+        <h1 id="main-title" class="title-ru-wrapper_slogan font-semibold">
             Современный иновационный подход к IT образованию.
         </h1>
         <ul class="title-ru-wrapper_points">
@@ -41,15 +41,16 @@
             CloudOfTechnology
         },
         mounted() {
-            gsap.from("#first-line", {x: 1920,  duration:.5});
-            gsap.from("#second-line", {x: 1920, delay:.5, duration:.5});
-            gsap.from("#third-line", {x: 1920, delay:1, duration:.5});
-            gsap.from("#four-line", {x: 1920, delay:2, duration:.5});
-            gsap.from("#first-icon", {opacity: 0, delay:3, duration:.5});
-            gsap.from("#second-icon", {opacity: 0, delay:3.5, duration:.5});
-            gsap.from("#third-icon", {opacity: 0, delay:4, duration:.5});
-            gsap.from("#four-icon", {opacity: 0, delay:4.5, duration:.5});
-            gsap.from("#five-icon", {opacity: 0, delay:3, duration:.5});
+            gsap.from("#main-title", {scale: 5, duration: 2})
+            gsap.from("#first-line", {x: 1920,  duration:.3});
+            gsap.from("#second-line", {x: 1920, delay:.3, duration:.3});
+            gsap.from("#third-line", {x: 1920, delay:.6, duration:.3});
+            gsap.from("#four-line", {x: 1920, delay:1.2, duration:.3});
+            gsap.from("#first-icon", {opacity: 0, delay:1.5, duration:.3});
+            gsap.from("#second-icon", {opacity: 0, delay:1.8, duration:.3});
+            gsap.from("#third-icon", {opacity: 0, delay:2.1, duration:.3});
+            gsap.from("#four-icon", {opacity: 0, delay:2.4, duration:.3});
+            gsap.from("#five-icon", {opacity: 0, delay:2.7, duration:.3});
         }
     }
 </script>

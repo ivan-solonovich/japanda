@@ -56,6 +56,7 @@
     import gsap from 'gsap'
     import { ScrollTrigger } from "gsap/ScrollTrigger";
     import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+
     gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
     export default {
@@ -72,21 +73,21 @@
                             scrub: true,
 
                         },
-                        x: -600,
-                        y: 300,
-                        duration: 1.5,
+                            ease: "circ.out",
+                            scale: 0.1,
+                            duration: 1.5,
 
                     })
                 gsap.from(".anim-two",{
                     scrollTrigger:  {
                         trigger: ".start-anim",
-                        start: "bottom bottom",
+                        start: "top bottom",
                         end: "bottom",
                         toggleActions: "restart none none none",
                         scrub: true,
                     },
-                    x: 1800,
-
+                    ease: "circ.out",
+                    scale: 0.1,
                     duration: 1.5,
                 })
 
@@ -99,9 +100,8 @@
                         scrub: true,
 
                     },
-                    x: -1800,
-
-
+                    ease: "circ.out",
+                    scale: .1,
                     duration: 1.5,
                 })
                 gsap.from(".anim-four",{
@@ -112,8 +112,8 @@
                         toggleActions: "restart none none none",
                         scrub: true,
                     },
-                    x: 1800,
-
+                    ease: "circ.out",
+                    scale: 0.1,
                     duration: 1.5,
                 })
             }else {
@@ -127,21 +127,21 @@
                         scrub: true,
 
                     },
-                    x: -600,
-                    y: 300,
+                    ease: "circ.out",
+                    scale: 0.1,
                     duration: 1.5,
 
                 })
                 gsap.from(".anim-two",{
                     scrollTrigger:  {
-                        trigger: ".start-anim",
+                        trigger: ".anim-one",
                         start: "bottom bottom",
                         end: "bottom",
                         toggleActions: "restart none none none",
                         scrub: true,
                     },
-                    x: 1800,
-
+                    ease: "circ.out",
+                    scale: 0.1,
                     duration: 1.5,
                 })
 
@@ -154,9 +154,8 @@
                         scrub: true,
 
                     },
-                    x: -1800,
-
-
+                    ease: "circ.out",
+                    scale: 0.1,
                     duration: 1.5,
                 })
                 gsap.from(".anim-four",{
@@ -167,8 +166,8 @@
                         toggleActions: "restart none none none",
                         scrub: true,
                     },
-                    x: 1800,
-
+                    ease: "circ.out",
+                    scale: 0.1,
                     duration: 1.5,
                 })
             }

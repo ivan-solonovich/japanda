@@ -1,6 +1,6 @@
 <template>
     <div class="practical-list">
-        <h1 class="practical-list_title">Большинство наших
+        <h1 class="practical-list_title start-anim-practical">Большинство наших
 
             <router-link :to="{name:'coursesRu'}">
 
@@ -11,7 +11,7 @@
             это - практика создания интернет-магазина,
             даже для абсолютных новичков. </h1>
         <div class="practical-list-ru-wrapper">
-            <div class="practical-list-ru-wrapper_subcontainer">
+            <div class="practical-list-ru-wrapper_subcontainer anim-one-practical">
                     <div class="practical-list-ru-wrapper_subcontainer_left">
                         <h3 class="practical-list-ru-wrapper_subcontainer_left_title">Вы никогда не писали код,
                             но страстно желаете начать свою IT-карьеру?</h3>
@@ -27,7 +27,7 @@
                              src="../../../assets/images/pic-for-practical/5474233.jpg" alt="">
                     </div>
             </div>
-            <div class="practical-list-ru-wrapper_subcontainer">
+            <div class="practical-list-ru-wrapper_subcontainer anim-two-practical">
                 <div class="practical-list-ru-wrapper_subcontainer_left">
                     <h3 class="practical-list-ru-wrapper_subcontainer_left_title">Вы освоились в html и css, работали c CMS и конструкторами сайтов.
                         Но, хотите идти в перед?</h3>
@@ -41,7 +41,7 @@
                          src="../../../assets/images/pic-for-practical/10502.jpg" alt="">
                 </div>
             </div>
-            <div class="practical-list-ru-wrapper_subcontainer">
+            <div class="practical-list-ru-wrapper_subcontainer anim-three-practical">
                 <div class="practical-list-ru-wrapper_subcontainer_left">
                     <h3 class="practical-list-ru-wrapper_subcontainer_left_title">Вы когда-нибудь слышали волшебное
                         слово full-stack?</h3>
@@ -56,7 +56,7 @@
                          src="../../../assets/images/pic-for-practical/5240276.jpg" alt="">
                 </div>
             </div>
-            <div class="practical-list-ru-wrapper_subcontainer">
+            <div class="practical-list-ru-wrapper_subcontainer anim-four-practical">
                 <div class="practical-list-ru-wrapper_subcontainer_left">
                     <h3 class="practical-list-ru-wrapper_subcontainer_left_title">Читаете требования к знаниям React,
                         Vue, TypeScript, Express?</h3>
@@ -76,8 +76,124 @@
 </template>
 
 <script>
+    import gsap from 'gsap'
+    import { ScrollTrigger } from "gsap/ScrollTrigger";
+    import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+    gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
     export default {
-        name: "PracticalListRu"
+        name: "PracticalListRu",
+        mounted() {
+            if(innerWidth > 1258){
+                gsap.from(".anim-one-practical",{
+
+                    scrollTrigger:  {
+                        trigger: ".start-anim-practical",
+                        start: "top bottom",
+                        end: "bottom",
+                        toggleActions: "restart none none none",
+                        scrub: true,
+
+                    },
+                    ease: "circ.out",
+                    scale: 0.1,
+                    duration: 1.5,
+
+                })
+                gsap.from(".anim-two-practical",{
+                    scrollTrigger:  {
+                        trigger: ".anim-one-practical",
+                        start: "top bottom",
+                        end: "bottom",
+                        toggleActions: "restart none none none",
+                        scrub: true,
+                    },
+                    ease: "circ.out",
+                    scale: 0.1,
+                    duration: 1.5,
+                })
+
+                gsap.from(".anim-three-practical",{
+                    scrollTrigger:  {
+                        trigger: ".anim-two-practical",
+                        start: "top bottom",
+                        end: "bottom",
+                        toggleActions: "restart none none none",
+                        scrub: true,
+
+                    },
+                    ease: "circ.out",
+                    scale: .1,
+                    duration: 1.5,
+                })
+                gsap.from(".anim-three-practical",{
+                    scrollTrigger:  {
+                        trigger: ".start-anim",
+                        start: "top bottom",
+                        end: "bottom",
+                        toggleActions: "restart none none none",
+                        scrub: true,
+                    },
+                    ease: "circ.out",
+                    scale: 0.1,
+                    duration: 1.5,
+                })
+            }else {
+                gsap.from(".anim-one-practical",{
+
+                    scrollTrigger:  {
+                        trigger: ".start-anim-practical",
+                        // start: "top bottom",
+                        // end: "bottom",
+                        toggleActions: "restart none none none",
+                        scrub: true,
+
+                    },
+                    ease: "circ.out",
+                    scale: 0.1,
+                    duration: 1.5,
+
+                })
+                gsap.from(".anim-two-practical",{
+                    scrollTrigger:  {
+                        trigger: ".anim-one-practical",
+                        start: "bottom bottom",
+                        end: "bottom",
+                        toggleActions: "restart none none none",
+                        scrub: true,
+                    },
+                    ease: "circ.out",
+                    scale: 0.1,
+                    duration: 1.5,
+                })
+
+                gsap.from(".anim-three-practical",{
+                    scrollTrigger:  {
+                        trigger: ".anim-two-practical",
+                        start: "top bottom",
+                        end: "bottom",
+                        toggleActions: "restart none none none",
+                        scrub: true,
+
+                    },
+                    ease: "circ.out",
+                    scale: 0.1,
+                    duration: 1.5,
+                })
+                gsap.from(".anim-four-practical",{
+                    scrollTrigger:  {
+                        trigger: ".anim-three-practical",
+                        start: "top bottom",
+                        end: "bottom",
+                        toggleActions: "restart none none none",
+                        scrub: true,
+                    },
+                    ease: "circ.out",
+                    scale: 0.1,
+                    duration: 1.5,
+                })
+            }
+
+        }
     }
 </script>
 

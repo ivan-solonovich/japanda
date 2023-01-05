@@ -20,15 +20,16 @@
     export default {
         name: "CloudOfTechnology",
         mounted() {
-            gsap.from("#icon-1", {x: 1920, y: -1920,  duration:1});
-            gsap.from("#icon-2", {x: -1920, y: 1920, delay: .5,  duration:1});
-            gsap.from("#icon-3", {x: 1920, y: 1920, delay: 1,  duration:1});
-            gsap.from("#icon-4", {x: -1920, y: -1920, delay: 1.5,  duration:1});
-            gsap.from("#icon-5", {x: 1920, y: -1920, delay: 2,  duration:1});
-            gsap.from("#icon-6", {x: -1920, y: 1920, delay: 1.5,  duration:1});
-            gsap.from("#icon-7", {x: 1920, y: 1920, delay: 2,  duration:1});
-            gsap.from("#icon-8", {x: -1920, y: -1920, delay: 2.5,  duration:1});
-            gsap.from("#icon-9", {x: 1920, y: -1920, delay: 1.5,  duration:1});
+
+            gsap.from("#icon-1", {x: 1920, y: -1920,  duration:.3});
+            gsap.from("#icon-2", {x: -1920, y: 1920, delay: .3,  duration:.3});
+            gsap.from("#icon-3", {x: 1920, y: 1920, delay: .6,  duration:.3});
+            gsap.from("#icon-4", {x: -1920, y: -1920, delay: .9,  duration:.3});
+            gsap.from("#icon-5", {x: 1920, y: -1920, delay: 1.2,  duration:.3});
+            gsap.from("#icon-6", {x: -1920, y: 1920, delay: 1.5,  duration:.3});
+            gsap.from("#icon-7", {x: 1920, y: 1920, delay: 1.8,  duration:.3});
+            gsap.from("#icon-8", {x: -1920, y: -1920, delay: 2.1,  duration:.3});
+            gsap.from("#icon-9", {x: 1920, y: -1920, delay: 2.4,  duration:.3});
         }
     }
 </script>

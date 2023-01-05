@@ -34,6 +34,7 @@
 <style lang="scss" scoped>
 .m-r-container{
     background-image: url("../../assets/images/bgi/banner-bg2.jpg");
+
     width: 100%;
     height: 100%;
     display: grid;

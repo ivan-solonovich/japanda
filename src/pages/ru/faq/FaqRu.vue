@@ -97,9 +97,9 @@
                             scrub: true,
 
                         },
-                        x: -1800,
-                        y: -800,
-                        duration: 1,
+                    ease: "circ.out",
+                    scale: 0.1,
+                    duration: 1.5,
 
                     })
                 gsap.from(".anim-two-faq",{
@@ -111,9 +111,9 @@
                         toggleActions: "restart none none none",
                         scrub: true,
                     },
-                    x: 1800,
-
-                    duration: 1,
+                    ease: "circ.out",
+                    scale: 0.1,
+                    duration: 1.5,
                 })
 
                 gsap.from(".anim-three-faq",{
@@ -125,10 +125,9 @@
                         scrub: true,
 
                     },
-                    x: -1800,
-
-
-                    duration: 1,
+                    ease: "circ.out",
+                    scale: 0.1,
+                    duration: 1.5,
                 })
                 gsap.from(".anim-four-faq",{
                     scrollTrigger:  {
@@ -139,8 +138,9 @@
                         scrub: true,
 
                     },
-                    x: 1800,
-                    duration: 1,
+                    ease: "circ.out",
+                    scale: 0.1,
+                    duration: 1.5,
                 })
             }else {
                 gsap.from(".anim-one-faq",{
@@ -153,9 +153,9 @@
                         scrub: true,
 
                     },
-                    x: -1800,
-                    y: -800,
-                    duration: 1,
+                    ease: "circ.out",
+                    scale: 0.1,
+                    duration: 1.5,
 
                 })
                 gsap.from(".anim-two-faq",{
@@ -166,9 +166,9 @@
                         toggleActions: "restart none none none",
                         scrub: true,
                     },
-                    x: 1800,
-                    y: -800,
-                    duration: 1,
+                    ease: "circ.out",
+                    scale: 0.1,
+                    duration: 1.5,
                 })
 
                 gsap.from(".anim-three-faq",{
@@ -179,10 +179,9 @@
                         scrub: true,
 
                     },
-                    x: -800,
-
-
-                    duration: 1,
+                    ease: "circ.out",
+                    scale: 0.1,
+                    duration: 1.5,
                 })
                 gsap.from(".anim-four-faq",{
                     scrollTrigger:  {
